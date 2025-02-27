@@ -47,3 +47,21 @@ Check the PDB status:
 ```
 kubectl get pdb
 ```
+
+5. Test the PDB
+Try draining a node:
+```
+kubectl drain node1 --ignore-daemonsets
+```
+If draining the node violates the PDB (i.e., it tries to evict more pods than allowed), it will block the operation.
+
+To force the drain (not recommended in production):
+
+```
+kubectl drain node1 --ignore-daemonsets --force
+```
+
+Key Takeaways
+PDB protects applications from voluntary disruptions (node drain, rolling updates).
+It does not prevent forced deletions (e.g., kubectl delete pod).
+Setting minAvailable: 1 ensures at least one pod is always running.
