@@ -61,6 +61,9 @@ To force the drain (not recommended in production):
 kubectl drain node1 --ignore-daemonsets --force
 ```
 
+![image](https://github.com/user-attachments/assets/4054c9e4-b4cf-46c2-b995-f68256fbb951)
+
+
 Key Takeaways
 PDB protects applications from voluntary disruptions (node drain, rolling updates).
 It does not prevent forced deletions (e.g., kubectl delete pod).
