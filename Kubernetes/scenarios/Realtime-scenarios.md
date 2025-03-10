@@ -7,5 +7,13 @@ Steps to Reproduce
 
 ![image](https://github.com/user-attachments/assets/b307bfd9-fce0-4ba5-b6df-7f881d895367)
 
-commands:
+Troubleshooting:
+kubectl get pods crashpod
+kubectl describe pod crashpod
+
+Solution
+
+Fix the application crash.
+
+Update the pod configuration to use the correct command.
 
