@@ -23,4 +23,9 @@ Update the pod configuration to use the correct command.
 ![image](https://github.com/user-attachments/assets/d6bc52a9-51e4-46ae-bc20-f7e4da48ca58)
 
 
+** 2️⃣ ImagePullBackOff (Invalid Image)
+
+Deploy an invalid image
+
+
 
