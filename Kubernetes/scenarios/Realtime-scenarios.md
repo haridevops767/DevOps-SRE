@@ -1,4 +1,4 @@
-1. CrashLoopBackOff (Application Crash)
+**1. CrashLoopBackOff (Application Crash)**
 
 Scenario: A pod keeps restarting due to an application error
 Steps to Reproduce
@@ -20,4 +20,6 @@ Fix the application crash.
 Update the pod configuration to use the correct command.
 
 ![image](https://github.com/user-attachments/assets/d6bc52a9-51e4-46ae-bc20-f7e4da48ca58)
+
+
 
