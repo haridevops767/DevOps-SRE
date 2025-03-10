@@ -15,7 +15,7 @@ Solution
 
 Fix the application crash.
 
-``` kubectl run crashpod --image=busybox -- /bin/sh -c "sleep 120" ```
+``` kubectl run crashpod --image=busybox -- /bin/sh -c "sleep 120" 
 
 Update the pod configuration to use the correct command.
 
