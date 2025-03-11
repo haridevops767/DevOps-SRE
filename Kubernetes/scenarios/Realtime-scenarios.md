@@ -27,5 +27,18 @@ Update the pod configuration to use the correct command.
 
 Deploy an invalid image
 
+Steps to Reproduce
+![image](https://github.com/user-attachments/assets/df013d1c-38f7-4a2f-91c6-d5e4e9585576)
+
+Troubleshooting:
+Kubectl get pods wrong-image
+
+Solution:
+Fix the image.
+
+
+![image](https://github.com/user-attachments/assets/85f3a8ae-a3a6-4a19-9345-6f05eca80656)
+
+
 
 
