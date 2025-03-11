@@ -27,8 +27,13 @@ Update the pod configuration to use the correct command.
 
 Deploy an invalid image
 
+
+
+
+
 Steps to Reproduce
 ![image](https://github.com/user-attachments/assets/df013d1c-38f7-4a2f-91c6-d5e4e9585576)
+
 
 Troubleshooting:
 Kubectl get pods wrong-image
@@ -38,6 +43,35 @@ Fix the image.
 
 
 ![image](https://github.com/user-attachments/assets/85f3a8ae-a3a6-4a19-9345-6f05eca80656)
+
+
+** 3. Pending state.
+
+Scenario: Pods are in pending state.
+
+Steps to Reproduce:
+
+Mention High CPU,Memory configuration which is higher then current configuration of node level in resource section.
+
+![image](https://github.com/user-attachments/assets/bd8a0bac-2d46-4c01-ba93-d8056b4960c8)
+
+Troubleshooting:
+
+kubectl get pod high-resource-pod
+
+kubectl describe pod high-resource-pod|tail -3
+
+![image](https://github.com/user-attachments/assets/baf2d788-b637-4edb-9534-fd59a7e815f5)
+
+
+Solution:
+
+Decrease the resource request values.
+
+![image](https://github.com/user-attachments/assets/27ddb9dc-d81b-4140-9223-017af22df2b4)
+
+
+
 
 
 
